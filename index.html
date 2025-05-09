@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mi Billetera</title>
   <style>
     * {
@@ -13,7 +13,7 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+      background-color: #007bff;
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -76,22 +76,25 @@
       flex: 1;
       padding: 15px;
       font-size: 16px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
+      background-color: #ffffff;
+      color: #007bff;
+      border: 2px solid #ffffff;
       border-radius: 10px;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
+      font-weight: bold;
     }
 
     .wallet-actions button:hover {
       background-color: #0056b3;
+      color: white;
+      border-color: #0056b3;
     }
 
     .wallet-message p {
       text-align: center;
       font-size: 16px;
-      color: #444;
+      color: #fff;
     }
 
     .loader-overlay {
@@ -287,6 +290,8 @@
         showMessage(`Has retirado $${value.toFixed(2)}`);
       });
     }
+
+    updateDisplay();
   </script>
 </body>
 </html>
