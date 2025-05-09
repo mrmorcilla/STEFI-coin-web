@@ -1,1 +1,25 @@
-<></>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Billetera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wallet-container">
+    <h1>💰 Mi Billetera</h1>
+    <div class="balance">
+      <span>Saldo actual:</span>
+      <span id="balance-amount">$1000.00</span>
+    </div>
+    <div class="buttons">
+      <button onclick="transfer()">Transferir</button>
+      <button onclick="addFunds()">Recargar</button>
+      <button onclick="withdraw()">Retirar</button>
+    </div>
+    <p id="message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
