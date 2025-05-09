@@ -87,28 +87,7 @@ body {
   color: #444;
 }
 
-@media (max-width: 600px) {
-  .wallet-app {
-    padding: 20px;
-  }
-
-  .wallet-actions {
-    flex-direction: column;
-  }
-
-  .wallet-actions button {
-    width: 100%;
-  }
-
-  .balance-value {
-    font-size: 28px;
-  }
-
-  .wallet-header h1 {
-    font-size: 24px;
-  }
-}
-
+/* Pantalla de carga */
 .loader-overlay {
   position: fixed;
   top: 0;
@@ -156,5 +135,27 @@ body {
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .wallet-app {
+    padding: 20px;
+  }
+
+  .wallet-actions {
+    flex-direction: column;
+  }
+
+  .wallet-actions button {
+    width: 100%;
+  }
+
+  .balance-value {
+    font-size: 28px;
+  }
+
+  .wallet-header h1 {
+    font-size: 24px;
   }
 }
