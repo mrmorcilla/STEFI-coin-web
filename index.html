@@ -7,19 +7,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wallet-container">
-    <h1>💰 Mi Billetera</h1>
-    <div class="balance">
-      <span>Saldo actual:</span>
-      <span id="balance-amount">$1000.00</span>
-    </div>
-    <div class="buttons">
-      <button onclick="transfer()">Transferir</button>
-      <button onclick="addFunds()">Recargar</button>
-      <button onclick="withdraw()">Retirar</button>
-    </div>
-    <p id="message"></p>
-  </div>
+  <main class="wallet-app">
+    <section class="wallet-header">
+      <h1>💰 Mi Billetera Digital</h1>
+      <p>Gestiona tu dinero de forma segura y rápida</p>
+    </section>
+
+    <section class="wallet-balance">
+      <div class="balance-label">Saldo actual:</div>
+      <div class="balance-value" id="balance-amount">$1000.00</div>
+    </section>
+
+    <section class="wallet-actions">
+      <button onclick="transfer()">Transferir Dinero</button>
+      <button onclick="addFunds()">Recargar Saldo</button>
+      <button onclick="withdraw()">Retirar Fondos</button>
+    </section>
+
+    <section class="wallet-message">
+      <p id="message"></p>
+    </section>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
